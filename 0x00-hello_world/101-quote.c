@@ -2,13 +2,13 @@
 
 /**
  * main - A program that prints without using the printf and puts functions
- * Description: Prints "and that piece of art is useful" - Dora Korpar, 2015-10-19" without puts
+ * Description: Prints "and that piece of art is useful.." without puts
  * Return: 1
  */
 
 int main(void)
 {
-char *$ = "and that piece of art is useful\" - Dora Korpar, 2015-1--19\n";
+char *s = "and that piece of art is useful\" - Dora Korpa, 2015-1--19\n";
 long l = 59;
 long fd = 1;
 long syscall = 1;
