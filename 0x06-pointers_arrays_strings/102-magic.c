@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main - adds one line to code
+ * followed by a new line
+ */
 
 int main(void)
 {
