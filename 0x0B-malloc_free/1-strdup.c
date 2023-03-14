@@ -1,13 +1,31 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 /**
- * main - function that prints the number of arguments passed to the program
- * @argc: number of arguments
- * @argv: array of arguments
- * Return: 0 (success)
+ * _strdup - function that returns a pointer
+ * to a newly allocated space in memeory
+ * @str: string
+ * Return: pointer of an array of chars
  */
-int main(int argc, char *argv[] __attribute__((unused)))
+char *_strdup(char *str)
 {
-	printf("%d\n", argc - 1);
-	return (0);
+	char *strout;
+
+	unsigned int i, j;
+
+	if (str == NULL)
+		return (NULL);
+
+	for (i = 0; str[i] != '\0'; i++)
+		;
+
+	strout = (char *)malloc(sizeof(char) * (i + 1));
+
+	if (strout == NULL)
+		return (NULL);
+
+	for (j = 0; j <= i; j++)
+		strout[j] = str[j];
+
+	return (strout);
 }
