@@ -18,11 +18,11 @@ void ch_free_grid(char **grid, unsigned int height)
 }
 
 /**
- * strow - function that splits a string into words.
+ * strtow - function that splits a string into words.
  * @str: string
  * Return: pointer of ab array of integers
  */
-char **strow(char *str)
+char **strtow(char *str)
 {
 	char **aout;
 	unsigned int c, height, i, j, a1;
